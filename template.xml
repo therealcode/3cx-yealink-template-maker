@@ -7441,7 +7441,7 @@ features.dialpad_mode_on_hold.enable
 ##                                         BSFT                                      ##          
 #######################################################################################
 bw.xsi.enable=
-bw.xsi.directory.enable =
+bw.xsi.directory.enable =
 bw.xsi.call_log.enable=
 bw.xmpp.enable=
 account.1.hoteling.mode=

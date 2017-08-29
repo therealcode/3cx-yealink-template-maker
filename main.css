@@ -1,0 +1,52 @@
+body {
+    padding-top: 5rem;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.underline{
+    border-bottom: 2px;
+    border-bottom: black;
+    border-bottom: solid;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-shadow: grey 3px 3px 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="file"] {
+    max-width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/*
+.container {
+    
+    max-width: 100%;
+}
+*/
+
+.live-code {
+    background-color: lightgreen;
+    margin-top: 5px;
+    
+}
+
+.shadow-box {
+    box-shadow: 1px 5px 5px grey;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-width: thin;
+    
+}
+
+
