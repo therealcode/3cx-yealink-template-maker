@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
 
 
@@ -43,16 +44,17 @@
     <div class="container center">
         <div class="starter-template">
             <h1>Yealink Template Maker</h1>
-            <p class="lead">Upload a Yealink doc. Choose custom options. Copy and paste.</p>
+            <p class="lead">Choose a Template. Pick custom options. Copy and paste.</p>
         </div>
     </div>
     <!-- /.container -->
 
+<!--
     <div class="container">
         <div class="shadow-box center">
-            <h2>Import XML File</h2>
-            <form>
-                <div class="form-group form-group-sm">
+            <h3>Import XML File</h3>
+            <form id=form>
+                <div class="form form-group form-group-sm">
                     <label for="template">Choose a Yealink Template from 3CX Versions: v14 thru v15.5</label>
                     <input type="file" class="form-control" name="file" id="file" placeholder="Choose a template...">
                     <output class=live-code name="templateLoaded" id="templateLoaded">...template loaded confirmation...</output>
@@ -60,19 +62,20 @@
             </form>
         </div>
     </div>
+-->
     <div class="container center underline">
 
-        <h3>Supported Yealink Modes:</h3>
-        <output name="supportedModels">
+        <h4>Supported Models:</h4>
+        <output id=models class=live-code style=font-size:18px;>
 <!--TODO extract models from XML-->
-            <h5 class=live-code>T42G T46G T42G T46G T46G T42G T46G</h5>
+            T42G T46G T42G T46G T46G T42G T46G
             <br>
             </output>
     </div>
     <div class="container center " name="allOptions">
-        <h3>Choose Custom Parameters</h3>
+        <h3>Choose Your Version: v14 v15.5</h3>
 
-        Choose Clock Display:
+        <p>Choose Clock Display:</p>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-outline-success active">
     <input type="radio" name="options" id="option1" autocomplete="off" checked> 24 Hour (default)
@@ -81,13 +84,29 @@
     <input type="radio" name="options" id="option2" autocomplete="off"> 12 Hour
   </label>
         </div>
-
-
+        <p>Enable Daylight Savings Time:</p>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-outline-success active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes (default)
+  </label>
+            <label class="btn btn-outline-success">
+    <input type="radio" name="options" id="option2" autocomplete="off"> No
+  </label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center shadow-box">
+            <div class="template">
+                <h4>Template Code:</h4>
+                <div class="copy-paste">
+                    Select All: <kbd><kbd>ctrl</kbd> + <kbd>a</kbd></kbd> Copy: <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd> Paste: <kbd><kbd>ctrl</kbd> + <kbd>v</kbd></kbd>
+                </div>
+                <br>
+                <object name=templateCode width="1000" height="200" data="template.txt"></object>
+            </div>
+        </div>
     </div>
 
-    <div class="copy-paste">
-        Select All: <kbd><kbd>ctrl</kbd> + <kbd>a</kbd></kbd><br> Copy: <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd><br> Paste: <kbd><kbd>ctrl</kbd> + <kbd>v</kbd></kbd><br>
-    </div>
 
 
 

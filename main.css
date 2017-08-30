@@ -1,5 +1,13 @@
 body {
     padding-top: 5rem;
+    width: auto;
+    margin: 15px;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    margin: auto;
 }
 
 .starter-template {
@@ -7,7 +15,7 @@ body {
     text-align: center;
 }
 
-.underline{
+.underline {
     border-bottom: 2px;
     border-bottom: black;
     border-bottom: solid;
@@ -28,25 +36,31 @@ input[type="file"] {
     margin-right: 35%;
 }
 
-/*
-.container {
-    
-    max-width: 100%;
-}
-*/
-
 .live-code {
     background-color: lightgreen;
-    margin-top: 5px;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .shadow-box {
-    box-shadow: 1px 5px 5px grey;
+    box-shadow: 0px 2px 5px grey;
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-width: thin;
     
 }
 
+.btn-group {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 
+.kbd {
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.template {}
