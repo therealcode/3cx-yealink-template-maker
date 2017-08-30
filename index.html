@@ -2,54 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="">
 
-    <title>Yealink Template Maker</title>
+  <title>Yealink Template Maker</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
 
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Custom Templates</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Custom Templates</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
-    <div class="container center">
-        <div class="starter-template">
-            <h1>Yealink Template Maker</h1>
-            <p class="lead">Choose a Template. Pick custom options. Copy and paste.</p>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <!-- /.container -->
+  </nav>
 
-<!--
+  <div class="container center">
+    <div class="starter-template">
+      <h1>Yealink Template Maker</h1>
+      <p class="lead">Choose a Template. Pick custom options. Copy and paste.</p>
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <!--
     <div class="container">
         <div class="shadow-box center">
             <h3>Import XML File</h3>
@@ -63,78 +63,80 @@
         </div>
     </div>
 -->
-    <div class="container center underline">
+  <div class="container center underline">
 
-        <h4>Supported Models:</h4>
-        <output id=models class=live-code style=font-size:18px;>
-<!--TODO extract models from XML-->
+    <h4>Supported Models:</h4>
+    <output id=models class=live-code style=font-size:18px;>
+<!--FUTURE: Extract models from XML-->
+<!--FUTURE: Clicking Phone||Version loads that specific template-->
             T42G T46G T42G T46G T46G T42G T46G
             <br>
             </output>
-    </div>
-    <div class="container center " name="allOptions">
-        <h3>Choose Your Version: v14 v15.5</h3>
+  </div>
+  <div class="container center " name="allOptions">
+    <h3>Choose Your Version: v14 v15.5</h3>
 
-        <p>Choose Clock Display:</p>
-        <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-outline-success active">
+    <p>Choose Clock Display:</p>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-outline-success active">
     <input type="radio" name="options" id="option1" autocomplete="off" checked> 24 Hour (default)
   </label>
-            <label class="btn btn-outline-success">
+      <label class="btn btn-outline-success">
     <input type="radio" name="options" id="option2" autocomplete="off"> 12 Hour
   </label>
-        </div>
-        <p>Enable Daylight Savings Time:</p>
-        <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-outline-success active">
+    </div>
+    <p>Enable Daylight Savings Time:</p>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-outline-success active">
     <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes (default)
   </label>
-            <label class="btn btn-outline-success">
+      <label class="btn btn-outline-success">
     <input type="radio" name="options" id="option2" autocomplete="off"> No
   </label>
-        </div>
     </div>
-    <div class="container">
-        <div class="center shadow-box">
-            <div class="template">
-                <h4>Template Code:</h4>
-                <div class="copy-paste">
-                    Select All: <kbd><kbd>ctrl</kbd> + <kbd>a</kbd></kbd> Copy: <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd> Paste: <kbd><kbd>ctrl</kbd> + <kbd>v</kbd></kbd>
-                </div>
-                <br>
-                <object name=templateCode width="1000" height="200" data="template.txt"></object>
-            </div>
+  </div>
+  <div class="container">
+    <div class="center shadow-box">
+      <div class="template">
+        <h4>Template Code:</h4>
+        <div class="copy-paste">
+          Select All: <kbd><kbd>ctrl</kbd> + <kbd>a</kbd></kbd> Copy: <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd> Paste: <kbd><kbd>ctrl</kbd> + <kbd>v</kbd></kbd>
         </div>
+        <br>
+        <object name=templateCode width="1000" height="200" data="template.txt"></object>
+      </div>
     </div>
+  </div>
 
 
 
 
 
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src=app.js type=application/javascript></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script>
-        (function() {
-            'use strict'
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src=app.js type=application/javascript></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script>
+    (function() {
+      'use strict'
 
-            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-                var msViewportStyle = document.createElement('style')
-                msViewportStyle.appendChild(
-                    document.createTextNode(
-                        '@-ms-viewport{width:auto!important}'
-                    )
-                )
-                document.head.appendChild(msViewportStyle)
-            }
+      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+          document.createTextNode(
+            '@-ms-viewport{width:auto!important}'
+          )
+        )
+        document.head.appendChild(msViewportStyle)
+      }
 
-        }())
-    </script>
+    }())
+
+  </script>
 
 </body>
 
