@@ -1,34 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function(){
+  let importForm = document.getElementById('importForm')
+  // Why can't I make this a let?
+  xmlStatus = document.getElementById('out').innerHTML
 
-  let templateCode = document.getElementsByName('templateCode').innerHTML
-  // FIXME: rawCode isn't defined when run..throws error. But can be accesses by re-defining it through the console.
-
-
-  console.log("Resources finished loading!")
-
-
-  document.addEventListener("click", function () {
-    // FIXME: On radio button click, have function run to replace strings in XML code & print to inner window.
-    let rawCode = templateCode.document.body.innerText
-    rawCode.replace("<header>", "<footer>")
-  })
-
-})
-
+  importForm.xmlFile.addEventListener('change', function(event){
+    let xmlFile = importForm.xmlFile.files[0]  
+    // Why can't I make this xmlStatus = ...
+    let reader = new FileReader()
+    reader.onload = function(event){
+    let xml = event.target.result
+    console.log(` File is now stored in the DOM.`)
+    importForm.out.innerHTML += `Now Editting: <b>${xmlFile.name}</b>`
+    let parser = new DOMParser()
+    let doc = parser.parseFromString(xml, "application/xml")
 
 
-// PREVIOUS CODE ATTEMPT
-//document.addEventListener("load", function(){
-//
-//    let templateCode = document.getElementsByName('templateCode').innerHTML
-//    // rawCode isn't defined when run..throws error. But can be accesses by re-defining it through the console. 
-//        
-//    console.log("Resources finished loading!")
-//})
-//
-//document.addEventListener("click", function(){
-//    // Using onclick to trigger replace and re-print for each option change
-//    let rawCode = templateCode.document.body.innerText
-//    rawCode.replace("<header>","<footer>")
-//
-//})
+    // List Name
+    let phoneName = doc.querySelector('name').innerHTML
+    console.log(phoneName)
+
+    // List Version
+    let version = doc.querySelector('version').innerHTML
+    console.log(`Template Version: ${version}`)
+
+    // List Phone Models
+    // TODO: Extract from <model> tag
+    let phoneModels = doc.querySelector('models').innerHTML
+    document.getElementById('models').innerHTML = phoneModels
+    console.log(phoneModels)
+
+    }
+
+       reader.readAsText(xmlFile, 'utf8')
+       
+})})
+
