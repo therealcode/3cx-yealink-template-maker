@@ -47,29 +47,26 @@
       <p class="lead">Choose a Template. Pick custom options. Copy and paste.</p>
     </div>
   </div>
-  <!-- /.container -->
 
-  <!--
+
+  
     <div class="container">
         <div class="shadow-box center">
             <h3>Import XML File</h3>
-            <form id=form>
+            <form id="importForm">
                 <div class="form form-group form-group-sm">
                     <label for="template">Choose a Yealink Template from 3CX Versions: v14 thru v15.5</label>
-                    <input type="file" class="form-control" name="file" id="file" placeholder="Choose a template...">
-                    <output class=live-code name="templateLoaded" id="templateLoaded">...template loaded confirmation...</output>
+                    <input type="file" class="form-control" name="xmlFile" placeholder="Choose a template...">
+                    <output class="live-code" name="xmlStatus" id="out"></output>
                 </div>
             </form>
         </div>
     </div>
--->
+
   <div class="container center underline">
 
     <h4>Supported Models:</h4>
-    <output id=models class=live-code style=font-size:18px;>
-<!--FUTURE: Extract models from XML-->
-<!--FUTURE: Clicking Phone||Version loads that specific template-->
-            T42G T46G T42G T46G T46G T42G T46G
+    <output id="models" class="live-code" style=font-size:18px;>
             <br>
             </output>
   </div>
@@ -99,7 +96,6 @@
     <div class="center shadow-box">
       <div class="template">
         <h4>Template Code:</h4>
-        <div class="copy-paste">
           Select All: <kbd><kbd>ctrl</kbd> + <kbd>a</kbd></kbd> Copy: <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd> Paste: <kbd><kbd>ctrl</kbd> + <kbd>v</kbd></kbd>
         </div>
         <br>

@@ -682,8 +682,8 @@
           <model name="Yealink T48S" filename="y000000000065.cfg" />
           <model name="Yealink T52S" filename="y000000000074.cfg" />
           <model name="Yealink T54S" filename="y000000000070.cfg" />
-        </filename><\![CDATA[#!version:1.0.0.1
-<div></div>
+        </filename><![CDATA[#!version:1.0.0.1
+
 #######################################################################################
 ##                Syslog Server                                                      ##          
 #######################################################################################
